@@ -11,10 +11,7 @@ import numpy as np
 import torch.nn as nn
 from einops import rearrange, repeat
 
-
-
 #################Possible Used Functions#################
-
 class GraphConvolution(nn.Module):
     def __init__(self, input_dim, output_dim, use_bias=True):
         super(GraphConvolution, self).__init__()
@@ -45,9 +42,8 @@ class GraphConvolution(nn.Module):
                + str(self.input_dim) + ' -> ' \
                + str(self.output_dim) + ')'
 
-
-from sklearn.metrics import confusion_matrix
 ########Metric Calculation#############
+from sklearn.metrics import confusion_matrix
 def calculate_metric(gt, pred):
     pred[pred > 0.5] = 1
     pred[pred < 1] = 0
@@ -266,9 +262,8 @@ class MDRL(nn.Module):
                 _i += sample * a.shape[1] * a.shape[2] + timepoint * a.shape[2]
                 i_list.append(_i)
                 v_list.append(_v)
-        _i = torch.cat(i_list).T.to(a.device)#(2,121426)
+        _i = torch.cat(i_list).T.to(a.device)
         _v = torch.cat(v_list).to(a.device)
-        #print(a.shape)#(4,15,116,116)
         return torch.sparse.FloatTensor(_i, _v, (a.shape[0]*a.shape[1]*a.shape[2], a.shape[0]*a.shape[1]*a.shape[3]))
 
 
