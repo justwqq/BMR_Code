@@ -4,7 +4,7 @@ import numpy as np
 import torch
 class DATASET(object):
     def read_data(self):
-        site1 = scipy.io.loadmat('/media/qqw/Elements/qqw/A_PycharmProjects/mywork_demo/abide.mat')#('/home/qqw/A_PycharmProjects/code/abide.mat')
+        site1 = scipy.io.loadmat('/media/qqw/Elements/qqw/A_PycharmProjects/mywork_demo/abide.mat')
         A = np.squeeze(site1['A'].T)
         series = []
         for i in range(len(A)):
