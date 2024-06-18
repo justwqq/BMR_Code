@@ -30,3 +30,16 @@ einops~=0.5.0
 
 
 Many thanks to Dr Byung-Hoon Kim for sharing their project [STAGIN](https://github.com/egyptdj/stagin).
+
+## Citation
+Please cite our work if you find this repository helpful:
+```bibtex
+@ARTICLE{10449452,
+  author={Wang, Qianqian and Wang, Wei and Fang, Yuqi and Yap, P.-T. and Zhu, Hongtu and Li, Hong-Jun and Qiao, Lishan and Liu, Mingxia},
+  journal={IEEE Transactions on Biomedical Engineering}, 
+  title={Leveraging Brain Modularity Prior for Interpretable Representation Learning of fMRI}, 
+  year={2024},
+  pages={1-11},
+  keywords={Functional magnetic resonance imaging;Representation learning;Network topology;Brain modeling;Topology;Autism;Biomedical engineering;Functional MRI;brain modularity;brain disorder;biomarker},
+  doi={10.1109/TBME.2024.3370415}}
+```
