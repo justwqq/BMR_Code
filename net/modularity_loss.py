@@ -3,7 +3,6 @@ import itertools
 import random
 import torch
 from scipy.spatial.distance import cosine
-
 a1 = [29, 30, 41, 42, 71, 72, 73, 74, 75, 76, 81, 82, 83, 84, 87, 88]  # original index of ROIs in SN
 a2 = [23, 24, 25, 26, 31, 32, 35, 36, 37, 38, 39, 40, 61, 62, 63, 64, 65, 66, 67, 68, 89, 90]  # DMN
 a3 = [3, 4, 7, 8, 59, 60, 13, 14, 15, 16]  # CEN
