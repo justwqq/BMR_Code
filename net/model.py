@@ -11,7 +11,7 @@ import numpy as np
 import torch.nn as nn
 from einops import rearrange, repeat
 
-#################Possible Used Functions#################
+#################Used Functions#################
 class GraphConvolution(nn.Module):
     def __init__(self, input_dim, output_dim, use_bias=True):
         super(GraphConvolution, self).__init__()
